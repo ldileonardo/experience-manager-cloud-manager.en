@@ -115,7 +115,7 @@ The specific file and directory structure may vary based on the specifics of you
    ```
 
 1. Now, create a subdirectory named `src` (as referenced in the assembly descriptor above on line 11) inside the dispatcher subdirectory to store the actual Apache and Dispatcher configurations. Within this `src` directory, create directories named `conf`, `conf.d`, `conf.dispatcher.d`, and `conf.modules.d`.
-1. Now you can populate the `conf`, `conf.d`, `conf.dispatcher.d`, and `conf.modules.d` directories with your configuration files. For example, the default configuration consists of these files and symbolic links.
+1. Now you can populate the `conf`, `conf.d`, `conf.dispatcher.d`, and `conf.modules.d` directories with your configuration files. For example, the default configuration consists of these files and symbolic links. The files listed as symlinks must be committed to GIT as symlinks and not files or the target symlinks will be overwritten.
 
    ```
    dispatcher
